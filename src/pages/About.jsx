@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import profile from "../assets/profile.jpeg"
 
 const About = () => {
   return (
@@ -15,10 +16,10 @@ const About = () => {
           className="flex justify-center"
         >
           <img
-            src="https://i.pravatar.cc/400"
-            alt="Reponse Dev"
-            className="w-80 h-80 object-cover rounded-2xl border border-gray-800 shadow-xl"
-          />
+  src={profile}
+  alt="Reponse Dev"
+  className="w-80 h-80 object-cover rounded-2xl border-4 border-blue-500 shadow-2xl hover:scale-105 transition duration-300"
+/>
         </motion.div>
 
         {/* RIGHT: Content */}

@@ -1,5 +1,5 @@
 import React from "react";
-import { Github, Linkedin, Mail, Twitter } from "lucide-react";
+import { Github, Linkedin, Mail,} from "lucide-react";
 
 const Footer = () => {
   return (
@@ -36,8 +36,15 @@ const Footer = () => {
   <Linkedin />
 </a>
 
+ <a
+  href="mailto:reponsedev@gmail.com"
+  target="_blank"
+  rel="noreferrer"
+  className="p-3 bg-gray-800 rounded-full hover:bg-blue-500 transition"
+>
+  <Mail />
+</a>
 
-   <a href="https://mail.google.com/mail/u/2/#inbox"target="_blank"><Mail className="hover:text-red-400 transition" /></a>
 
 
 </div>

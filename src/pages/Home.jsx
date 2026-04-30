@@ -83,9 +83,10 @@ const Home = () => {
           transition={{ delay: 1.2 }}
           className="flex justify-center gap-6 text-gray-400"
         >
-          <a href="#"><Github className="hover:text-white transition" /></a>
-          <a href="#"><Linkedin className="hover:text-blue-400 transition" /></a>
-          <a href="#"><Mail className="hover:text-red-400 transition" /></a>
+          <a href="https://github.com/KReponse"target="_blank"><Github className="hover:text-white transition" /></a>
+          <a  href="https://www.linkedin.com/in/reponsedev"target="_blank"><Linkedin className="hover:text-blue-400 transition" /></a>
+          <a href="https://mail.google.com/mail/u/2/#inbox"target="_blank"><Mail className="hover:text-red-400 transition" /></a>
+
         </motion.div>
 
       </div>

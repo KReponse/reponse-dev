@@ -1,5 +1,5 @@
 import React from "react";
-import { Github, Linkedin, Mail } from "lucide-react";
+import { Github, Linkedin, Mail, Twitter } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -17,24 +17,30 @@ const Footer = () => {
         </p>
 
         {/* Social Icons */}
-        <div className="flex justify-center gap-6 mb-6">
+      <div className="flex justify-center gap-6 mt-6">
 
-          <a href="https://github.com/" target="_blank" rel="noreferrer"
-            className="hover:text-blue-400 transition">
-            <Github />
-          </a>
+  <a
+   href="https://github.com/KReponse"
+   target="_blank" 
+   rel="noreferrer"
+  className="p-3 bg-gray-800 rounded-full hover:bg-blue-500 transition ">
+    <Github />
+  </a>
 
-          <a href="https://linkedin.com/" target="_blank" rel="noreferrer"
-            className="hover:text-blue-400 transition">
-            <Linkedin />
-          </a>
+  <a
+  href="https://www.linkedin.com/in/reponsedev"
+  target="_blank"
+  rel="noreferrer"
+  className="p-3 bg-gray-800 rounded-full hover:bg-blue-500 transition"
+>
+  <Linkedin />
+</a>
 
-          <a href="mailto:reponsedev@gmail.com"
-            className="hover:text-blue-400 transition">
-            <Mail />
-          </a>
 
-        </div>
+   <a href="https://mail.google.com/mail/u/2/#inbox"target="_blank"><Mail className="hover:text-red-400 transition" /></a>
+
+
+</div>
 
         {/* Copyright */}
         <p className="text-gray-500 text-sm">

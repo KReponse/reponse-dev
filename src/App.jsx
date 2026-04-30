@@ -3,9 +3,10 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Projects from "./pages/Projects";
 import Skills from "./pages/Skills";
+import Resume from "./pages/Resume";
 import Contact from "./pages/Contact";
 import Footer from "./components/Footer";
-import Resume from "./pages/Resume";
+
 
 
 function App() {
@@ -16,9 +17,10 @@ function App() {
       <About />
       <Projects />
       <Skills/>
+      <Resume />
       <Contact/>
       <Footer/>
-      <Resume />
+      
     </>
   );
 }

@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import {
   ArrowUpRight,
-  BriefcaseBusiness,
+  Briefcase,
   CheckCircle2,
   Download,
   GraduationCap,
@@ -151,7 +151,7 @@ const Resume = () => {
             >
               <div className="flex items-center gap-3">
                 <div className="flex h-11 w-11 items-center justify-center rounded-xl border border-blue-500/20 bg-blue-500/10 text-blue-400">
-                  <BriefcaseBusiness size={21} />
+                  <Briefcase size={21} />
                 </div>
 
                 <div>

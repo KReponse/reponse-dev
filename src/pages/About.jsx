@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import { motion } from "framer-motion";
 import {
   ArrowUpRight,
@@ -14,13 +13,13 @@ const About = () => {
       id="about"
       className="relative overflow-hidden bg-[#080808] py-24 text-white sm:py-28"
     >
-      {/* Background glow */}
+      {/* Background Glow */}
       <div className="pointer-events-none absolute left-[-180px] top-1/3 h-[400px] w-[400px] rounded-full bg-blue-600/10 blur-[120px]" />
 
       <div className="pointer-events-none absolute bottom-[-100px] right-[-180px] h-[400px] w-[400px] rounded-full bg-blue-500/5 blur-[120px]" />
 
       <div className="relative z-10 mx-auto max-w-7xl px-6 sm:px-8 lg:px-10">
-        {/* Section heading */}
+        {/* Section Heading */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -44,9 +43,8 @@ const About = () => {
           </h2>
         </motion.div>
 
-        {/* Main content */}
         <div className="grid items-center gap-14 lg:grid-cols-[0.85fr_1.15fr] lg:gap-20">
-          {/* Profile image */}
+          {/* Profile Image */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -55,10 +53,8 @@ const About = () => {
             className="flex justify-center lg:justify-start"
           >
             <div className="relative">
-              {/* Image glow */}
               <div className="absolute inset-5 rounded-3xl bg-blue-600/20 blur-3xl" />
 
-              {/* Image card */}
               <div className="relative overflow-hidden rounded-3xl border border-white/10 bg-white/[0.03] p-2 shadow-2xl">
                 <img
                   src={profile}
@@ -66,11 +62,8 @@ const About = () => {
                   className="h-[340px] w-[280px] rounded-2xl object-cover sm:h-[390px] sm:w-[320px]"
                 />
 
-                {/* Image overlay */}
                 <div className="absolute inset-x-2 bottom-2 rounded-b-2xl bg-gradient-to-t from-black/90 via-black/50 to-transparent px-5 pb-5 pt-16">
-                  <p className="text-sm font-semibold">
-                    Reponse Dev
-                  </p>
+                  <p className="text-sm font-semibold">Reponse Dev</p>
 
                   <p className="mt-1 text-xs text-gray-400">
                     Full Stack Developer
@@ -78,7 +71,7 @@ const About = () => {
                 </div>
               </div>
 
-              {/* Floating focus card */}
+              {/* Floating Focus Card */}
               <motion.div
                 animate={{ y: [0, -8, 0] }}
                 transition={{
@@ -107,7 +100,7 @@ const About = () => {
             </div>
           </motion.div>
 
-          {/* About content */}
+          {/* About Content */}
           <motion.div
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -147,9 +140,7 @@ const About = () => {
             {/* Stats */}
             <div className="mt-9 grid grid-cols-3 gap-3 sm:gap-4">
               <div className="rounded-2xl border border-white/10 bg-white/[0.03] p-4">
-                <h3 className="text-2xl font-bold text-blue-400">
-                  5+
-                </h3>
+                <h3 className="text-2xl font-bold text-blue-400">5+</h3>
 
                 <p className="mt-1 text-xs text-gray-500 sm:text-sm">
                   Projects
@@ -157,9 +148,7 @@ const About = () => {
               </div>
 
               <div className="rounded-2xl border border-white/10 bg-white/[0.03] p-4">
-                <h3 className="text-2xl font-bold text-blue-400">
-                  AI
-                </h3>
+                <h3 className="text-2xl font-bold text-blue-400">AI</h3>
 
                 <p className="mt-1 text-xs text-gray-500 sm:text-sm">
                   Solutions
@@ -167,9 +156,7 @@ const About = () => {
               </div>
 
               <div className="rounded-2xl border border-white/10 bg-white/[0.03] p-4">
-                <h3 className="text-2xl font-bold text-blue-400">
-                  24/7
-                </h3>
+                <h3 className="text-2xl font-bold text-blue-400">24/7</h3>
 
                 <p className="mt-1 text-xs text-gray-500 sm:text-sm">
                   Learning
@@ -177,7 +164,7 @@ const About = () => {
               </div>
             </div>
 
-            {/* Action buttons */}
+            {/* Buttons */}
             <div className="mt-9 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
               <a
                 href="#media"
@@ -214,91 +201,6 @@ const About = () => {
             </div>
           </motion.div>
         </div>
-=======
-import React from "react";
-import { motion } from "framer-motion";
-import profile from "../assets/profile.jpeg"
-
-const About = () => {
-  return (
-    <section id="about" className="py-20 bg-gray-950 text-white">
-      <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
-
-        {/* LEFT: Image */}
-        <motion.div
-          initial={{ opacity: 0, x: -60 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
-          className="flex justify-center"
-        >
-          <img
-  src={profile}
-  alt="Reponse Dev"
-  className="w-80 h-80 object-cover rounded-2xl border-4 border-blue-500 shadow-2xl hover:scale-105 transition duration-300"
-/>
-        </motion.div>
-
-        {/* RIGHT: Content */}
-        <motion.div
-          initial={{ opacity: 0, x: 60 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
-        >
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            About <span className="text-blue-400">Me</span>
-          </h2>
-
-          <p className="text-gray-400 mb-6 leading-relaxed">
-            I'm <span className="text-white font-semibold">Reponse KUKINKUNDA</span>, 
-            a passionate Full Stack Developer focused on building modern web 
-            applications and AI-powered solutions. I enjoy turning ideas into 
-            real-world products that are scalable, clean, and user-friendly.
-          </p>
-
-          <p className="text-gray-400 mb-8 leading-relaxed">
-            Currently working on <span className="text-blue-400">AI Tour Rwanda</span>, 
-            a smart platform that enhances tourism using artificial intelligence.
-          </p>
-
-          {/* Highlights */}
-          <div className="grid grid-cols-3 gap-4 mb-8 text-center">
-            <div className="bg-gray-900 p-4 rounded-xl border border-gray-800">
-              <h3 className="text-xl font-bold text-blue-400">1+</h3>
-              <p className="text-sm text-gray-400">Years Learning</p>
-            </div>
-
-            <div className="bg-gray-900 p-4 rounded-xl border border-gray-800">
-              <h3 className="text-xl font-bold text-blue-400">5+</h3>
-              <p className="text-sm text-gray-400">Projects</p>
-            </div>
-
-            <div className="bg-gray-900 p-4 rounded-xl border border-gray-800">
-              <h3 className="text-xl font-bold text-blue-400">100%</h3>
-              <p className="text-sm text-gray-400">Dedication</p>
-            </div>
-          </div>
-
-          {/* Buttons */}
-          <div className="flex gap-4">
-            <a
-              href="#contact"
-              className="px-6 py-3 bg-blue-500 hover:bg-blue-600 rounded-xl font-semibold transition"
-            >
-              Contact Me
-            </a>
-          <a
-  href="/Reponse-Dev-CV.pdf"
-  download
-  className="px-6 py-3 bg-blue-500 hover:bg-blue-600 rounded-xl font-semibold transition"
->
-  Download CV
-</a>
-          </div>
-        </motion.div>
-
->>>>>>> 98fe866e3bf5a9903dd29d9d11277ef879c443c6
       </div>
     </section>
   );

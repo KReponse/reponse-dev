@@ -99,9 +99,9 @@ const Home = () => {
               transition={{ delay: 1, duration: 0.7 }}
               className="mt-6 max-w-2xl text-base sm:text-lg leading-relaxed text-gray-400"
             >
-              I help startups, businesses and tourism platforms build modern
-              web applications, scalable backend systems and AI-powered
-              digital solutions that turn ideas into real products.
+              I help startups, companies, businesses and tourism platforms turn ideas into 
+              real products through modern web applications, scalable backend systems
+              and AI-powered digital solutions.
             </motion.p>
 
             {/* Technology Badges */}
